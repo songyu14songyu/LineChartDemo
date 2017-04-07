@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_common"
+    tools:context="sunrain.linechartdemo.MainActivity">
+
+    <sunrain.linechartlib.LineChartView
+        android:id="@+id/chartview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:bgcolor="#00000000"
+        app:interval="50dp"
+        app:isScroll="false"
+        app:linecolor="#00ff00"
+        app:xylinecolor="#e2e2e2"
+        app:xylinewidth="1dp"
+        app:ystringcolor="#ffffff"
+        app:xytextcolor="#ffffff"
+        app:ytextsize="12sp"
+        app:xytextsize="14sp" />
+</RelativeLayout>
